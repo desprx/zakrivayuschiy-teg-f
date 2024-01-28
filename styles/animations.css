@@ -26,6 +26,8 @@
 
 .contour {
   fill: var(--contour);
+  fill: var(--bg-color-accent);
+  transition: fill 0.1s linear;
 }
 
 .like-icon:hover .core {
@@ -86,6 +88,7 @@
 .like-icon.is-liked .sparks {
   fill: var(--sparks);
   transition: fill 0.3s 0.06s linear;
+  animation: sparks-opacity 0.3s 0.3s ease-in alternate 1;
 }
 
 @keyframes sparks {
@@ -111,11 +114,11 @@
   opacity: 0;
 }
 
-.like-icon.is-liked .sparks {
+/* .like-icon.is-liked .sparks {
   animation: sparks-opacity 0.3s 0.3s ease-in alternate 1;
-}
+} */
 
-.contour {
+/* .contour {
   fill: var(--bg-color-accent);
   transition: fill 0.1s linear;
-}
+} */
