@@ -262,11 +262,9 @@
   border: 2px solid var(--bg-color-accent);
   cursor: pointer;
   min-width: 138px;
-  padding: 9px 17px;
 
   position: relative;
   overflow: hidden;
-  border: 2px solid var(--bg-color-accent);
 }
 
 .dialog__button::after {
