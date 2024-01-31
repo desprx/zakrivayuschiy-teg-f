@@ -41,12 +41,12 @@
 
 .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.3s 0.05s linear;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .core {
@@ -59,10 +59,9 @@
   transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon:active .contour {
+/* .like-icon:active .contour {
   fill: var(--sparks);
-}
-/* sfa */
+} */
 
 .like-icon.is-liked .core {
   fill: var(--sparks);

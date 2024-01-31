@@ -16,7 +16,7 @@
     ),
     repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --size-cardw: clamp(375px, 49vw, 49vw);
+  --size-cardw: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
   --active-btn: gray;
   --title-size: clamp(0.875rem, 0.677rem + 0.951vw, 1.438rem);
   --title-main-size: clamp(3.063rem, 2.71rem + 1.69vw, 4.063rem);
