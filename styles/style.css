@@ -480,18 +480,17 @@ button {
 
   .dialog-form {
     max-width: 100vw;
-    gap: 0;
   }
 
-  .pop-up__title {
-    padding: 6px 16px 15px 40px;
-  }
+  /* .pop-up__title {
+    margin-right: 10px;
+  } */
 
   .pop-up__button {
     min-width: 300px;
   }
 
-  .floppy_save_dialog {
+  /* .floppy_save_dialog {
     margin-left: 32px;
-  }
+  } */
 }
