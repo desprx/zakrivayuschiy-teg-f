@@ -551,7 +551,8 @@
           </button>
         </div>
       </article>
-
+    </main>
+    <footer class="footer">
       <div class="save">
         <button
           class="dialog__button button"
@@ -569,23 +570,23 @@
           <span class="save__text button__text">Сохранить на&nbsp;память</span>
         </button>
       </div>
-    </main>
-    <dialog id="save-dialog" class="pop-up">
-      <div class="dialog-form">
-        <svg
-          viewBox="0 0 21 21"
-          class="floppy_save floppy_save_dialog card__icon-button"
-        >
-          <use href="svg/floppy.svg#floppy"></use>
-        </svg>
-        <h2 class="pop-up__title">Вставьте дискету, чтобы продолжить</h2>
-      </div>
-      <form method="dialog" class="dialog-form-open">
-        <button class="pop-up__button button" type="submit">
-          <span class="save__text button__text"> ок </span>
-        </button>
-      </form>
-    </dialog>
+      <dialog id="save-dialog" class="pop-up">
+        <div class="dialog-form">
+          <svg
+            viewBox="0 0 21 21"
+            class="floppy_save floppy_save_dialog card__icon-button"
+          >
+            <use href="svg/floppy.svg#floppy"></use>
+          </svg>
+          <h2 class="pop-up__title">Вставьте дискету, чтобы продолжить</h2>
+        </div>
+        <form method="dialog" class="dialog-form-open">
+          <button class="pop-up__button button" type="submit">
+            <span class="save__text button__text"> ок </span>
+          </button>
+        </form>
+      </dialog>
+    </footer>
 
     <script src="./scripts/like.js"></script>
   </body>
