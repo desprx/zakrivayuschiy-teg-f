@@ -207,27 +207,34 @@ button {
 
 .card__icon-button {
   background-color: transparent;
-
   outline: none;
   transition: 0.3s ease;
   border: 2px solid transparent;
-
-  height: 41px;
+  padding: 0;
+  /* height: 41px; */
+  /* padding-right: 1px; */
   padding-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card__icon-button:focus {
+/* .card__icon-button:focus {
   border: 2px solid var(--bg-color-accent);
-}
+} */
 
 .card__icon-button:focus-visible {
   border-color: var(--bg-color-accent);
 }
 
+.card__icon-button:active {
+  border: none;
+}
+
 .card__button {
   justify-self: end;
   display: flex;
-  padding: 0 25px 23px 25px;
+  padding: 0 25px 21px 25px;
   gap: 3px;
 }
 
@@ -252,6 +259,7 @@ button {
   text-transform: capitalize;
 
   min-inline-size: 130px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,6 +344,7 @@ button {
 
 .floppy_save_dialog {
   width: 39px;
+  color: var(--bg-color-accent);
 }
 
 .save__text {
@@ -347,6 +356,10 @@ button {
 .pop-up__title {
   color: var(--bg-color-accent);
   font-family: var(--font-accent), fantasy, Arial;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: inherit;
 }
 
 .pop-up::backdrop {
@@ -356,7 +369,7 @@ button {
 
 .dialog-form {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 200px;
   gap: 30px;
   align-items: center;
   justify-items: center;
@@ -383,9 +396,9 @@ button {
 .pop-up__button {
   /* margin: 1px 1px 1px 15px; */
   cursor: pointer;
-  /* width: clamp(16.063rem, -47.875rem + 300vw, 18.313rem); */
+  width: clamp(16.063rem, -47.875rem + 300vw, 18.313rem);
   padding: 9px 17px;
-  width: clamp(16.063rem, 54.415rem + -163.636vw, 18.313rem);
+  /* width: clamp(16.063rem, 54.415rem + -163.636vw, 18.313rem); */
   border: 2px solid var(--bg-color-accent);
   background-color: var(--bg-color);
   text-transform: uppercase;
@@ -440,7 +453,7 @@ button {
   }
 
   .content {
-    gap: 57px;
+    gap: 51px;
   }
 
   .card {
@@ -461,11 +474,11 @@ button {
   }
 
   .card__title {
-    padding: 7px 0 11px 9px;
+    padding: 7px 0 10px 9px;
   }
 
   .card__button {
-    padding: 0 27px 17px 25px;
+    padding: 0 27px 25px 25px;
   }
 
   .card__icon-button {
@@ -496,24 +509,4 @@ button {
   .pop-up[open] {
     max-width: 343px;
   }
-
-  /* .dialog-form {
-    display: flex;
-  } */
-
-  /* .dialog-form {
-    max-width: 100vw;
-  } */
-
-  /* .pop-up__title {
-    margin-right: 10px;
-  } */
-
-  /* .pop-up__button {
-    min-width: 300px;
-  } */
-
-  /* .floppy_save_dialog {
-    margin-left: 32px;
-  } */
 }
