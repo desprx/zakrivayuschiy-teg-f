@@ -498,7 +498,7 @@ button {
   }
 
   .dialog-form {
-    grid-template-columns: auto 213px;
+    grid-template-columns: auto 200px;
   }
 
   .floppy_save {
