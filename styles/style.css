@@ -369,7 +369,7 @@ button {
 
 .dialog-form {
   display: grid;
-  grid-template-columns: auto 200px;
+  grid-template-columns: auto 236px;
   gap: 30px;
   align-items: center;
   justify-items: center;
@@ -398,7 +398,7 @@ button {
   cursor: pointer;
   width: clamp(16.063rem, -47.875rem + 300vw, 18.313rem);
   padding: 9px 17px;
-  /* width: clamp(16.063rem, 54.415rem + -163.636vw, 18.313rem); */
+
   border: 2px solid var(--bg-color-accent);
   background-color: var(--bg-color);
   text-transform: uppercase;
@@ -497,6 +497,10 @@ button {
     align-items: center;
   }
 
+  .dialog-form {
+    grid-template-columns: auto 213px;
+  }
+
   .floppy_save {
     width: 28px;
     justify-self: end;
@@ -508,5 +512,9 @@ button {
 
   .pop-up[open] {
     max-width: 343px;
+  }
+
+  .pop-up__button {
+    width: clamp(16.063rem, 54.415rem + -163.636vw, 18.313rem);
   }
 }
